@@ -1,0 +1,33 @@
+
+.switch{
+  @apply  overflow-hidden;
+}
+.switch-label{
+    @apply  bg-gray-900  w-12 h-6 border border-white/50 rounded-full relative p-1 cursor-pointer flex justify-between items-center
+}
+
+.switch-ball{
+    @apply bg-white w-6 h-5 absolute left-[1px] top-[1px] rounded-full transition-transform duration-200;
+}
+.switch-mode{
+    @apply w-full h-full absolute top-0 left-0 rounded-full;
+}
+
+.switch label span:first-child{
+   opacity: 0;
+}
+.switch #checkbox:checked + label span:first-child{
+    opacity: 1;
+}
+
+.switch label span:nth-child(2){
+    opacity: 1;
+ }
+
+ .switch #checkbox:checked + label span:nth-child(2){
+     opacity: 0;
+ }
+
+.switch #checkbox:checked + label span:last-child{
+    transform: translateX(1.3rem); 
+}

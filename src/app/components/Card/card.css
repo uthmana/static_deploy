@@ -1,0 +1,14 @@
+.card {
+    @apply hover:shadow-md dark:shadow-none flex flex-col w-full max-w-[300px] bg-slate-100 text-black dark:text-white  dark:bg-gray-900 sm:w-[280px] relative m-4 pb-4 border rounded-md dark:border-white/10 dark:hover:border-white/25 overflow-hidden;
+}
+
+.card-img{
+    @apply w-full h-[140px] md:h-[160] lg:h-[160px] object-cover;
+}
+
+.card-link {
+    @apply absolute top-0 left-0 w-full h-full;
+}
+.card-title{
+    @apply text-xl font-bold my-2;
+}
